@@ -5,7 +5,7 @@ jobs:
   build-macos:
     strategy:
       matrix:
-        go-version: ["1.17"]
+        go-version: ["1.19"]
         os: [macos-latest]
     runs-on: ${{ matrix.os }}
     env:
@@ -51,7 +51,7 @@ jobs:
   build-windows:
     strategy:
       matrix:
-        go-version: ["1.17"]
+        go-version: ["1.19"]
         os: [windows-latest]
     runs-on: self-hosted
     env:
