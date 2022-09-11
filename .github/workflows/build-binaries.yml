@@ -1,5 +1,6 @@
-on: [push, pull_request]
 name: Build binaries
+on:
+  workflow_dispatch:
 jobs:
   build-macos:
     strategy:
